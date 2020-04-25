@@ -11,3 +11,7 @@ body {
 .category-header {
  @apply text-blue-900 font-semibold;
 }
+
+.active {
+ @apply font-bold text-dark-blue;
+}
