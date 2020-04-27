@@ -2,13 +2,16 @@ module.exports = {
   theme: {
     extend: {
       margin: {
+        '5px': '0.313rem',
         '35px': '2.188rem',
         '10px': '0.625rem'
       },
       padding: {
         '3px': '0.188rem',
+        '5px': '0.313rem',
         '6px': '0.375rem',
-        '10px': '0.675rem'
+        '10px': '0.675rem',
+        '15px': '0.938rem'
       },
       spacing: {
         '240px': '15rem',
