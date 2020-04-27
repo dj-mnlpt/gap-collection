@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collection Page</title>
     <link rel="stylesheet" href="/dist/tailwind.css">
+
 </head>
 <body>
     <main>
@@ -34,38 +35,32 @@
     
                     <section class="category-container hidden lg:block lg:w-1/4 max-w-screen-208px pl-4 pb-1 mr-12">
                         <div class="category-wrapper">
-                            <h3 class="category-header text-category-header py-6px">Featured Shops</h3>
                             <ul>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">The Logo Shop</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">The Everyday Shop</a></li>
-                            </ul>
-                            <h3 class="category-header text-category-header mt-3 py-6px">Featured Shops</h3>
-                            <ul>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Seasonal Picks</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">New Arrivals</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Online Exclusives</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700 active"><a href="">Jeans</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Pants</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Joggers</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Shorts</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">T-shirts</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Polos</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Graphic T-Shirts</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Shirts</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Sweaters</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Sweatshirts & Sweatpants</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Outerwear & Blazers</a></li>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">Underwwear</a></li>
-                            </ul>
-                            <h3 class="category-header text-category-header mt-3 py-6px">Accesories</h3>
-                            <ul>
-                                <li class="py-6px text-category-lists leading-snug text-gray-700"><a href="#">All the Extras</a></li>
-                            </ul>
-                            <h3 class="category-header text-category-header mt-3 py-6px">Deals</h3>
-                            <ul>
-                                <li class="text-red-700 py-6px text-category-lists leading-snug text-gray-700"><a href="">Styles under P1000</a></li>
-                                <li class="text-red-700 py-6px text-category-lists leading-snug text-gray-700"><a href="">Last Change to Buy</a></li>
-                                <li class="text-red-700 py-6px text-category-lists leading-snug text-gray-700"><a href="">Sale</a></li>
+                                <h3 class="category-header text-category-header py-6px">Featured Shops</h3>
+                                <li class="category-lists"><a href="#">The Logo Shop</a></li>
+                                <li class="category-lists"><a href="#">The Everyday Shop</a></li>
+                                <h3 class="category-header text-category-header mt-3 py-6px">Featured Shops</h3>
+                                <li class="category-lists"><a href="#">Seasonal Picks</a></li>
+                                <li class="category-lists"><a href="#">New Arrivals</a></li>
+                                <li class="category-lists"><a href="#">Online Exclusives</a></li>
+                                <li class="category-lists active before:empty-content"><a href="#">Jeans</a></li>
+                                <li class="category-lists"><a href="#">Pants</a></li>
+                                <li class="category-lists"><a href="#">Joggers</a></li>
+                                <li class="category-lists"><a href="#">Shorts</a></li>
+                                <li class="category-lists"><a href="#">T-shirts</a></li>
+                                <li class="category-lists"><a href="#">Polos</a></li>
+                                <li class="category-lists"><a href="#">Graphic T-Shirts</a></li>
+                                <li class="category-lists"><a href="#">Shirts</a></li>
+                                <li class="category-lists"><a href="#">Sweaters</a></li>
+                                <li class="category-lists"><a href="#">Sweatshirts & Sweatpants</a></li>
+                                <li class="category-lists"><a href="#">Outerwear & Blazers</a></li>
+                                <li class="category-lists"><a href="#">Underwear</a></li>
+                                <h3 class="category-header text-category-header mt-3 py-6px">Accesories</h3>
+                                <li class="category-lists"><a href="#">All the Extras</a></li>
+                                <h3 class="category-header text-category-header mt-3 py-6px">Deals</h3>
+                                <li class="category-lists" id="category-lists"><a href="">Styles under P1000</a></li>
+                                <li class="category-lists" id="category-lists"><a href="">Last Change to Buy</a></li>
+                                <li class="category-lists" id="category-lists"><a href="">Sale</a></li>
                             </ul>
                         </div>
                     </section>
@@ -74,77 +69,104 @@
                         <div class="filter-container hidden md:block h-16 py-5">
                             <ul class="parent-filters inline-block">
                                 <li class="inline-block text-sm text-gray-700 font-bold mr-5 w-112px text-center lg:w-32">55 Items</li>
-                                <li class="inline-block mr-5 w-112px lg:w-32 relative"><div class="w-full cursor-pointer"><span>categories</span><i class="fas fa-angle-down float-right p-1 text-dark-blue absolute right-0"></i></div></li>
-                                    <div class="categories-wrapper hidden">
-                                    <ul>
-                                        <li><a href="#">Skinny</a></li>
-                                        <li><a href="#">Slim</a></li>
-                                        <li><a href="#">Straight</a></li>
-                                        <li><a href="#">Slim Straight</a></li>
-                                        <li><a href="#">Athletic</a></li>
-                                    </ul>
+                                <li class="filter-selector inline-block mr-5 w-112px lg:w-32 relative">
+                                    <div class="filter-title w-full cursor-pointer">
+                                        <span>categories</span>
+                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
                                     </div>
-                            
-                                <li class="inline-block mr-5 w-112px lg:w-32 relative"><div class="cursor-pointer w-full">size<i class="fas fa-angle-down float-right p-1 text-dark-blue absolute right-0"></i></div></li>
-                                    <div class="sizes-wrapper hidden">
-                                    <h3>Bottom (Waist)</h3>
-                                    <ul>
-                                        <li><a href="#"></a>28W</li>
-                                        <li><a href="#"></a>29W</li>
-                                        <li><a href="#"></a>30W</li>
-                                        <li><a href="#"></a>31W</li>
-                                        <li><a href="#"></a>32W</li>
-                                        <li><a href="#"></a>33W</li>
-                                        <li><a href="#"></a>34W</li>
-                                        <li><a href="#"></a>35W</li>
-                                        <li><a href="#"></a>36W</li>
-                                        <li><a href="#"></a>37W</li>
-                                        <li><a href="#"></a>38W</li>
-                                    </ul>
-                                    <h3>Bottoms (Length)</h3>
-                                    <ul>
-                                        <li><a href="#">28</a></li>
-                                        <li><a href="#">29</a></li>
-                                        <li><a href="#">30</a></li>
-                                        <li><a href="#">31</a></li>
-                                        <li><a href="#">32</a></li>
-                                        <li><a href="#">33</a></li>
-                                        <li><a href="#">34</a></li>
-                                        <li><a href="#">35</a></li>
-                                        <li><a href="#">36</a></li>
-                                    </ul>
-                                    </div>
-                                    
-                        
-                                <li class="inline-block mr-5 w-112px lg:w-32 relative"><div class="cursor-pointer w-full">color<i class="fas fa-angle-down float-right p-1 text-dark-blue absolute right-0"></i></div></li>
-                                    <div class="colors-wrapper hidden">
+                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px">
                                         <ul>
-                                            <li><a href="#">Black</a></li>
-                                            <li><a href="#">Blue</a></li>
-                                            <li><a href="#">Bright Medium</a></li>
-                                            <li><a href="#">Cancun Cove Blue</a></li>
-                                            <li><a href="#">Dark Grey</a></li>
-                                            <li><a href="#">Dark Pearl</a></li>
-                                            <li><a href="#">Gray Stone</a></li>
-                                            <li><a href="#">Grey Wash</a></li>
-                                            <li><a href="#">Khaki</a></li>
-                                            <li><a href="#">Light Tint Distressed</a></li>
-                                            <li><a href="#">Light Wash</a></li>
-                                            <li><a href="#">Medium Destroy</a></li>
-                                            <li><a href="#">Medium Worn</a></li>
-                                            <li><a href="#">Midnight Wash</a></li>
-                                            <li><a href="#">New Classic Navy Blue</a></li>
-                                            <li><a href="#">Sapphire Resin</a></li>
-                                            <li><a href="#">Wet Moss</a></li>
-                                            <li><a href="#">White</a></li>
-                                            <li><a href="#">Worn Dark</a></li>
+                                            <li><a href="#">Skinny</a></li>
+                                            <li><a href="#">Slim</a></li>
+                                            <li><a href="#">Straight</a></li>
+                                            <li><a href="#">Slim Straight</a></li>
+                                            <li><a href="#">Athletic</a></li>
                                         </ul>
                                     </div>
-    
-                                <li class="inline-block mr-5 w-112px lg:w-32 relative"><div class="cursor-pointer w-full">price<i class="fas fa-angle-down float-right p-1 text-dark-blue absolute right-0"></i></div></li>
-                                    <div class="price-range-container hidden">
-                                        <input type="range" name="" id="">
+                                </li>
+                                   
+                            
+                                <li class="filter-selector inline-block mr-5 w-112px lg:w-32 relative">
+                                    <div class="filter-title cursor-pointer w-full">
+                                        <span>sizes</span>
+                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
                                     </div>
+                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px">
+                                        <h3 class="size-headers">Bottom (Waist)</h3>
+                                        <ul class="flex justify-start flex-wrap">
+                                            <li class="w-1/4"><a href="#">28W</a></li>
+                                            <li class="w-1/4"><a href="#">29W</a></li>
+                                            <li class="w-1/4"><a href="#">30W</a></li>
+                                            <li class="w-1/4"><a href="#">31W</a></li>
+                                            <li class="w-1/4"><a href="#">32W</a></li>
+                                            <li class="w-1/4"><a href="#">33W</a></li>
+                                            <li class="w-1/4"><a href="#">34W</a></li>
+                                            <li class="w-1/4"><a href="#">35W</a></li>
+                                            <li class="w-1/4"><a href="#">36W</a></li>
+                                            <li class="w-1/4"><a href="#">37W</a></li>
+                                            <li class="w-1/4"><a href="#">38W</a></li>
+                                        </ul>
+                                        <h3 class="size-headers">Bottoms (Length)</h3>
+                                        <ul class="flex justify-start flex-wrap">
+                                            <li class="w-1/4"><a href="#">28</a></li>
+                                            <li class="w-1/4"><a href="#">29</a></li>
+                                            <li class="w-1/4"><a href="#">30</a></li>
+                                            <li class="w-1/4"><a href="#">31</a></li>
+                                            <li class="w-1/4"><a href="#">32</a></li>
+                                            <li class="w-1/4"><a href="#">33</a></li>
+                                            <li class="w-1/4"><a href="#">34</a></li>
+                                            <li class="w-1/4"><a href="#">35</a></li>
+                                            <li class="w-1/4"><a href="#">36</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                 
+                                    
+                        
+                                <li class="filter-selector inline-block mr-5 w-112px lg:w-32 relative">
+                                    <div class="filter-title cursor-pointer w-full">
+                                        <span>color</span>
+                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                    </div>
+                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px">
+                                        <ul>
+                                            <li class="color-lists"><a href="#">Black</a></li>
+                                            <li class="color-lists"><a href="#">Blue</a></li>
+                                            <li class="color-lists"><a href="#">Bright Medium</a></li>
+                                            <li class="color-lists"><a href="#">Cancun Cove Blue</a></li>
+                                            <li class="color-lists"><a href="#">Dark Grey</a></li>
+                                            <li class="color-lists"><a href="#">Dark Pearl</a></li>
+                                            <li class="color-lists"><a href="#">Gray Stone</a></li>
+                                            <li class="color-lists"><a href="#">Grey Wash</a></li>
+                                            <li class="color-lists"><a href="#">Khaki</a></li>
+                                            <li class="color-lists"><a href="#">Light Tint Distressed</a></li>
+                                            <li class="color-lists"><a href="#">Light Wash</a></li>
+                                            <li class="color-lists"><a href="#">Medium Destroy</a></li>
+                                            <li class="color-lists"><a href="#">Medium Worn</a></li>
+                                            <li class="color-lists"><a href="#">Midnight Wash</a></li>
+                                            <li class="color-lists"><a href="#">New Classic Navy Blue</a></li>
+                                            <li class="color-lists"><a href="#">Sapphire Resin</a></li>
+                                            <li class="color-lists"><a href="#">Wet Moss</a></li>
+                                            <li class="color-lists"><a href="#">White</a></li>
+                                            <li class="color-lists"><a href="#">Worn Dark</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                  
+    
+                                <li class="filter-selector inline-block mr-5 w-112px lg:w-32 relative">
+                                    <div class="filter-title cursor-pointer w-full">
+                                        <span>price</span>
+                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                    </div>
+                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px">
+                                       <div class="price-slider">
+                                        <input value="0" min="0" max="100" step="0.5" type="range" oninput="updatePriceLabels()">
+                                        <input value="100" min="0" max="100" step="0.5" type="range" oninput="updatePriceLabels()">
+                                       </div>
+                                    </div>
+                                </li>
+                                   
                             </ul>
     
                         </div>
@@ -388,5 +410,31 @@
         </div>
     </main>
     <script src="https://kit.fontawesome.com/81395aa6da.js" crossorigin="anonymous"></script>
+    <script src="dist/app.js"></script>
+    <script>
+        
+        function updatePriceLabels() {
+            //avoids slider overlap
+            var sliders = document.querySelectorAll(".price-slider input");
+            var val1 = parseInt(sliders[0].value);
+            var val2 = parseInt(sliders[1].value);
+            if (val1 >= val2) {
+                sliders[0].value = val2 - 3;
+                return;
+            }
+            if (val2 <= val1) {
+                sliders[1].value = val1 + 3;
+                return;
+            }
+            
+            //adds color when a range is selected
+            if (val1 > 0 || val2 < 99) {
+                sliders[0].style.background = sliders[1].style.background = "-webkit-gradient(linear, 0 0,100% 0, color-stop(0, white), color-stop(" + (val1 / 100) + ", white),color-stop(" + (val1 / 100) + ", #f0f0f0), color-stop(" + (val2 / 100) + ", #f0f0f0), color-stop(" + (val2 / 100) + ", white))";
+            } else {
+                sliders[0].style.background = sliders[1].style.background = '';
+            }
+        }
+
+    </script>
 </body>
 </html>

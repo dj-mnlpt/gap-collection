@@ -1,3 +1,40 @@
+
+.price-slider {
+    position: relative;
+    width: 250px;
+    margin: 0 auto 20px;
+    height: 35px;
+    text-align: center;
+}
+
+.price-slider input {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.price-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+
 @import "tailwindcss/base";
 
 body {
@@ -9,9 +46,43 @@ body {
 @import "tailwindcss/utilities";
 
 .category-header {
- @apply text-blue-900 font-semibold;
+ @apply text-blue-900;
+ @apply font-semibold;
 }
 
 .active {
- @apply font-bold text-dark-blue;
+ @apply font-bold; 
+ @apply text-dark-blue;
+}
+
+.category-lists {
+    @apply py-6px text-category-lists leading-snug text-gray-700;
+}
+
+.category-lists > a {
+    @apply relative;
+}
+
+#category-lists {
+    @apply text-red-700
+}
+
+li.active  {
+    @apply text-dark-blue;
+}
+
+.active > a::before {
+    @apply empty-content absolute left-active top-0 h-full w-1 bg-dark-blue;
+}
+
+.filter-wrapper li > a{
+    @apply p-10px text-filter-color text-filter-size block;
+}
+
+.size-headers {
+    @apply text-category-header text-dark-blue m-0 mb-2 pt-4 pr-2 pl-2;
+}
+
+.color-lists {
+    @apply mt-1 pl-6;
 }
