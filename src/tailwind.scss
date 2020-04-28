@@ -1,8 +1,6 @@
-
-// .price-slider {
-//     width: 243px;
-//     margin: 20px auto 40px;
-// }
+.filter-container, .filter-wrapper {
+    height: fit-content;
+}
 
 .middle {
     position: relative;
@@ -112,6 +110,10 @@ li.active  {
 
 .active > a::before {
     @apply empty-content absolute left-active top-0 h-full w-1 bg-dark-blue;
+}
+
+.filter-wrapper {
+    @apply overflow-auto
 }
 
 .filter-wrapper li > a{

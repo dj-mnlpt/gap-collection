@@ -1,3 +1,9 @@
+.filter-container, .filter-wrapper {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .middle {
   position: relative;
   width: 50%;
@@ -17229,6 +17235,10 @@ li.active {
   height: 100%;
   width: 0.25rem;
   background-color: #122344;
+}
+
+.filter-wrapper {
+  overflow: auto;
 }
 
 .filter-wrapper li > a {
