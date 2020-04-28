@@ -17215,6 +17215,48 @@ li.filter-selector {
   li.filter-selector {
     border-width: 0;
   }
+
+  .filter-wrapper::before {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-color: #e2e8f0;
+    border-style: solid;
+    background-color: #fff;
+    content: '';
+    right: 50%;
+    left: 50%;
+    margin-left: -1rem;
+    --transform-translate-x: 0;
+    --transform-translate-y: 0;
+    --transform-rotate: 0;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    --transform-rotate: 45deg;
+  }
+
+  #category-wrapper::before {
+    bottom: 97%;
+  }
+
+  #sizes-wrapper::before {
+    bottom: 98%;
+  }
+
+  #color-wrapper::before {
+    bottom: 99.3%;
+  }
+
+  #range-wrapper::before {
+    bottom: 95%;
+  }
 }
 
 .filter-span {
@@ -17223,32 +17265,6 @@ li.filter-selector {
   font-size: 0.875rem;
   font-weight: 700;
   color: #4a5568;
-}
-
-.filter-wrapper::before {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  border-bottom-width: 0;
-  border-right-width: 0;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-color: #e2e8f0;
-  border-style: solid;
-  background-color: #fff;
-  content: '';
-  right: 50%;
-  left: 50%;
-  margin-left: -1rem;
-  --transform-translate-x: 0;
-  --transform-translate-y: 0;
-  --transform-rotate: 0;
-  --transform-skew-x: 0;
-  --transform-skew-y: 0;
-  --transform-scale-x: 1;
-  --transform-scale-y: 1;
-  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
-  --transform-rotate: 45deg;
 }
 
 .size-headers {
@@ -17264,22 +17280,6 @@ li.filter-selector {
 .color-lists {
   margin-top: 0.25rem;
   padding-left: 1.5rem;
-}
-
-#category-wrapper::before {
-  bottom: 97%;
-}
-
-#sizes-wrapper::before {
-  bottom: 98%;
-}
-
-#color-wrapper::before {
-  bottom: 99.3%;
-}
-
-#range-wrapper::before {
-  bottom: 95%;
 }
 
 @media (min-width: 640px) {
