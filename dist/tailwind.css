@@ -17211,6 +17211,14 @@ li.filter-selector {
   border-color: #e2e8f0;
 }
 
+.filter-span {
+  margin-left: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+
 @media (min-width: 768px) {
   li.filter-selector {
     border-width: 0;
@@ -17257,14 +17265,14 @@ li.filter-selector {
   #range-wrapper::before {
     bottom: 95%;
   }
-}
 
-.filter-span {
-  margin-left: 0.75rem;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #4a5568;
+  .filter-span {
+    margin-left: 0;
+    text-transform: lowercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4a5568;
+  }
 }
 
 .size-headers {

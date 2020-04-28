@@ -121,6 +121,9 @@ li.active  {
 li.filter-selector {
     @apply border-t border-solid border-gray-300;
 }
+.filter-span {
+    @apply ml-3 uppercase text-sm font-bold text-gray-700;
+}
 
 @screen md{
     li.filter-selector {
@@ -141,12 +144,11 @@ li.filter-selector {
    #range-wrapper::before {
        @apply bottom-ran-bot-bef;
    }
+   .filter-span {
+    @apply ml-0 lowercase text-base font-normal text-gray-700;
+    }
     
 }
-.filter-span {
-    @apply ml-3 uppercase text-sm font-bold text-gray-700;
-}
-
 
 .size-headers {
     @apply text-category-header text-dark-blue m-0 mb-2 pt-4 pr-2 pl-2;

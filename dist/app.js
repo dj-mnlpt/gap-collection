@@ -11004,6 +11004,8 @@ $(function () {
     // $(".green-con").toggleClass("hidden")
 
     $(".filter-container").toggleClass("hidden"); // $(".filter-container").toggleClass("fixed")
+
+    $("#overlay").removeClass("hidden");
   });
   var documentWidth = $(window).width();
   var flag = false;
@@ -11012,6 +11014,7 @@ $(function () {
   if (documentWidth > 768) {
     $(".filter-selector").children(".filter-title").find("i").addClass("fa-angle-down");
     $(".filter-selector").children(".filter-title").find("i").removeClass("fa-caret-down");
+    $("#overlay").addClass("hidden");
   }
 
   if (documentWidth <= 768) {
@@ -11022,6 +11025,7 @@ $(function () {
   $(window).resize(function () {
     if (documentWidth > 768) {
       $(".filter-container").addClass("hidden");
+      $("#overlay").addClass("hidden");
       flag = true;
     }
 
@@ -11035,6 +11039,7 @@ $(function () {
 
     if ($(e.target).closest('.filter-container').length == 0) {
       $(".filter-container").addClass("hidden");
+      $("#overlay").addClass("hidden");
     }
   });
 });
