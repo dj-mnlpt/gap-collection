@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,29 @@
     <link rel="stylesheet" href="/dist/tailwind.css">
 
 </head>
+
 <body>
+   
     <main>
+       
+
         <div class="collection-banner-container relative">
-           
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-1/6"></a>
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-2/6"></a>
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-3/6"></a>
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-4/6"></a>
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-5/6"></a>
             <a href="" class="w-1/6 h-full inline-block absolute inset-x-6/6"></a>
-            <img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/t/218/assets/fall_men_denim_eban.jpg?v=13326880930919237124" alt="denim" class="mb-10px"/>
+            <img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/t/218/assets/fall_men_denim_eban.jpg?v=13326880930919237124"
+                alt="denim" class="mb-10px" />
         </div>
 
         <div class="collection-category-products-wrapper ">
 
             <div class="lg:max-w-screen-7xl lg:mx-auto">
-                <div class="collection-mx-width max-w-lg mx-auto px-2 md:max-w-3xl lg:flex lg:max-w-full lg:mx-0">
                
-                    <section class="mobile-filter-container text-center md:hidden">
-                        <div class="h-39px my-5"><button class="w-240px h-full bg-dark-blue text-white text-sm font-bold uppercase">Filter</button></div>
-                        <p class="my-5 text-sm text-gray-700 font-bold">55 Items</p>
-                    </section>
-    
+                <div class="collection-mx-width max-w-lg mx-auto px-2 md:max-w-3xl lg:flex lg:max-w-full lg:mx-0">
+
                     <section class="category-container hidden lg:block lg:w-1/4 max-w-screen-208px pl-4 pb-1 mr-12">
                         <div class="category-wrapper">
                             <ul>
@@ -61,17 +62,31 @@
                             </ul>
                         </div>
                     </section>
-    
+
                     <section class="products-filter-container lg:w-3/4">
-                        <div class="filter-container hidden md:block h-16 py-5">
-                            <ul class="parent-filters inline-block">
-                                <li class="inline-block text-sm text-gray-700 font-bold mr-5 w-112px relative text-center">55 Items</li>
-                                <li class="filter-selector inline-block mr-5 w-112px relative">
+                        
+                        <div class="mobile-filter-container text-center md:hidden">
+                            <div class="h-39px my-5">
+                                <button class="mobile-filter w-240px h-full bg-dark-blue text-white text-sm font-bold uppercase">Filter</button>
+                            </div>
+                            <p class="my-5 text-sm text-gray-700 font-bold">55 Items</p>
+                        </div>
+
+                        <!-- <div class="green-con w-40 h-40 bg-green-900 hidden"></div> -->
+                       
+                        <div class="filter-container hidden fixed bg-white bottom-34% min-w-0 w-full max-w-497px border border-solid border-gray-300 md:border-0 md:max-w-full md:bg-transparent md:block md:static md:px-0 md:h-16 md:py-5">
+                            <h2 class="text-center uppercase leading-relaxed bg-gray-500 tracking-wide md:hidden">Filter</h2>
+                            <ul class="parent-filters md:inline-block px-4 ">   
+                                <li
+                                    class="hidden md:inline-block text-sm text-gray-700 font-bold mr-5 md:w-112px relative text-center">
+                                    55 Items</li>
+                                <li class="filter-selector block w-full py-5 md:py-0 md:inline-block mr-5 md:w-112px relative">
                                     <div class="filter-title cursor-pointer w-full ">
-                                        <span>categories</span>
-                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                        <span class="filter-span">categories</span>
+                                        <i class="fas float-left md:float-right p-1 text-dark-blue"></i>
                                     </div>
-                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px md:right-0 x-md:right-filter-right top-filter-top" id="category-wrapper">
+                                    <div class="filter-wrapper hidden bg-white w-342px max-w-342px md:absolute md:right-0 x-md:right-filter-right top-filter-top"
+                                        id="category-wrapper">
                                         <ul>
                                             <li><a href="#">Skinny</a></li>
                                             <li><a href="#">Slim</a></li>
@@ -82,12 +97,13 @@
                                     </div>
                                 </li>
 
-                                <li class="filter-selector inline-block mr-5 w-112px relative">
+                                <li class="filter-selector block w-full py-5 md:py-0 md:inline-block mr-5 md:w-112px relative">
                                     <div class="filter-title cursor-pointer w-full">
-                                        <span>sizes</span>
-                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                        <span class="filter-span">sizes</span>
+                                        <i class="fas float-left md:float-right p-1 text-dark-blue"></i>
                                     </div>
-                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px md:right-0 x-md:right-filter-right top-filter-top" id="sizes-wrapper">
+                                    <div class="filter-wrapper hidden bg-white w-342px max-w-342px md:absolute md:right-0 x-md:right-filter-right top-filter-top"
+                                        id="sizes-wrapper">
                                         <h3 class="size-headers">Bottom (Waist)</h3>
                                         <ul class="flex justify-start flex-wrap">
                                             <li class="md:w-1/4 lg:w-1/5"><a href="#">28W</a></li>
@@ -115,14 +131,15 @@
                                             <li class="md:w-1/4 lg:w-1/5"><a href="#">36</a></li>
                                         </ul>
                                     </div>
-                                </li>                          
-                        
-                                <li class="filter-selector inline-block mr-5 w-112px relative">
+                                </li>
+
+                                <li class="filter-selector block w-full py-5 md:py-0 md:inline-block mr-5 md:w-112px relative">
                                     <div class="filter-title cursor-pointer w-full relative">
-                                        <span>color</span>
-                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                        <span class="filter-span">color</span>
+                                        <i class="fas float-left md:float-right p-1 text-dark-blue"></i>
                                     </div>
-                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px md:right-0 x-md:right-filter-right top-filter-top" id="color-wrapper">
+                                    <div class="filter-wrapper hidden bg-white w-342px max-w-342px md:absolute md:right-0 x-md:right-filter-right top-filter-top"
+                                        id="color-wrapper">
                                         <ul>
                                             <li class="color-lists"><a href="#">Black</a></li>
                                             <li class="color-lists"><a href="#">Blue</a></li>
@@ -144,17 +161,17 @@
                                             <li class="color-lists"><a href="#">White</a></li>
                                             <li class="color-lists"><a href="#">Worn Dark</a></li>
                                         </ul>
-                                    </div
-                                    
+                                    </div> 
                                 </li>
 
-                                <li class="filter-selector inline-block mr-5 w-112px relative">
+                                <li class="filter-selector block w-full py-5 md:py-0 md:inline-block mr-5 md:w-112px relative">
                                     <div class="filter-title cursor-pointer w-full">
-                                        <span>price</span>
-                                        <i class="fas fa-angle-down float-right p-1 text-dark-blue"></i>
+                                        <span class="filter-span">price</span>
+                                        <i class="fas float-left md:float-right p-1 text-dark-blue"></i>
                                     </div>
-                                    <div class="filter-wrapper absolute hidden bg-white w-342px max-w-342px md:right-0 x-md:right-filter-right top-filter-top" id="range-wrapper">
-                                       <div class="price-slider">
+                                    <div class="filter-wrapper hidden bg-white w-342px max-w-342px md:absolute md:right-0 x-md:right-filter-right top-filter-top"
+                                        id="range-wrapper">
+                                        <div class="price-slider">
                                             <div class="price h-1/3 mb-8 mt-4 text-center">
                                                 <span id="minPrice">1950.00</span>
                                                 <span class="mx-12">-</span>
@@ -170,107 +187,130 @@
                                                 <div class="thumb left"></div>
                                                 <div class="thumb right"></div>
                                             </div>
-                                       </div>
-                                       <div class="apply-btn w-20 mx-auto my-5">
-                                        <button class="py-5px px-15px border-gray-700 bg-black text-white uppercase">Apply</button>
-                                       </div>
-
+                                        </div>
+                                        <div class="apply-btn w-20 mx-auto my-5">
+                                            <button
+                                                class="py-5px px-15px border-gray-700 bg-black text-white uppercase">Apply</button>
+                                        </div>
                                     </div>
-                                    
                                 </li>
-                                   
                             </ul>
-    
                         </div>
-    
+
                         <div class="products-container flex flex-wrap text-xs text-gray-00 leading-snug">
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4 ">
                                 <div class="item-img-wrapper">
-                                   <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200035303506-1200035303513-1200034927093-1200034927109-1200035303520-1200035303537-1200034927116-1200034927123-1200035303544-1200035303551-1200034927147-1200034938839-1200034938853-1_360x480_crop_center.jpg?v=1561948823" alt=""></a> 
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200035303506-1200035303513-1200034927093-1200034927109-1200035303520-1200035303537-1200034927116-1200034927123-1200035303544-1200035303551-1200034927147-1200034938839-1200034938853-1_360x480_crop_center.jpg?v=1561948823"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/283704_trueblack_A_360x480_crop_center.jpg?v=1550646719" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/283704_trueblack_A_360x480_crop_center.jpg?v=1550646719"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"> <img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200018557506-1200018574268-1200018557513-1200018591722-1200018557520-1200018591739-1200018557537-1200018591746-1200018557544-1200018591760-1200018557551-1200018591784-1200018557568-1_360x480_crop_center.jpg?v=1560484881" alt=""></a>            
+                                    <a href="#"> <img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200018557506-1200018574268-1200018557513-1200018591722-1200018557520-1200018591739-1200018557537-1200018591746-1200018557544-1200018591760-1200018557551-1200018591784-1200018557568-1_360x480_crop_center.jpg?v=1560484881"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200022348527-1200016278144-1200016278151-1200016278168-1200022334049-1200016278175-1200001762238-1200016278182-1200016278205-1200016278212-1200016278229-1200016278236-1200022247493-1_c0d57737-fe2d-4464-81c1-cfec55964b0c_360x480_crop_center.jpg?v=1562997651" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200022348527-1200016278144-1200016278151-1200016278168-1200022334049-1200016278175-1200001762238-1200016278182-1200016278205-1200016278212-1200016278229-1200016278236-1200022247493-1_c0d57737-fe2d-4464-81c1-cfec55964b0c_360x480_crop_center.jpg?v=1562997651"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/558525001_ResinRinse_A_360x480_crop_center.jpg?v=1551062771" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/558525001_ResinRinse_A_360x480_crop_center.jpg?v=1551062771"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200008931569-1200008931583-1200008931606-1200008931620-1200008931644-1200008931651-1200008931675-1200008931729-1200008931736-1200008963072-1200008963096-1200008963119_c643ab0c-41d1-4098-8f2a-658d95e69e04_360x480_crop_center.jpg?v=1560486263" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200008931569-1200008931583-1200008931606-1200008931620-1200008931644-1200008931651-1200008931675-1200008931729-1200008931736-1200008963072-1200008963096-1200008963119_c643ab0c-41d1-4098-8f2a-658d95e69e04_360x480_crop_center.jpg?v=1560486263"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200009643591-1200009643614-1200009643638-1200009643652-1200009643676-1200009643683-1200009643706-1200009643751-1200009643768-1200009643782-1200009643805-1200009643829_462e92e4-2984-4c02-aca9-6dd87845a666_360x480_crop_center.jpg?v=1560486264" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200009643591-1200009643614-1200009643638-1200009643652-1200009643676-1200009643683-1200009643706-1200009643751-1200009643768-1200009643782-1200009643805-1200009643829_462e92e4-2984-4c02-aca9-6dd87845a666_360x480_crop_center.jpg?v=1560486264"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/841612001_MediumDarkTint_A_360x480_crop_center.jpg?v=1551402576" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/841612001_MediumDarkTint_A_360x480_crop_center.jpg?v=1551402576"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424505001_DestroyWash_A_360x480_crop_center.jpg?v=1551062433" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424505001_DestroyWash_A_360x480_crop_center.jpg?v=1551062433"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/789847003030_789847_Dark_Indigo_00_A_360x480_crop_center.jpg?v=1550744190" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/789847003030_789847_Dark_Indigo_00_A_360x480_crop_center.jpg?v=1550744190"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990768-1200042990775-1200042990782-1200042990799-1200042990805-1200042990829-1200042990843-1200042990867-1200042990874-1200042990898-1200042990904-1200042990928-1200043685052_360x480_crop_center.jpg?v=1574923104" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990768-1200042990775-1200042990782-1200042990799-1200042990805-1200042990829-1200042990843-1200042990867-1200042990874-1200042990898-1200042990904-1200042990928-1200043685052_360x480_crop_center.jpg?v=1574923104"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200046309023-1200045335146-1200045335153-1200045335177-1200045335191-1200046309030-1200045807742-1200045807766-1200046309047-1200045807780-1200046309054_360x480_crop_center.jpg?v=1574923175" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200046309023-1200045335146-1200045335153-1200045335177-1200045335191-1200046309030-1200045807742-1200045807766-1200046309047-1200045807780-1200046309054_360x480_crop_center.jpg?v=1574923175"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span>
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200039330782-1200039330799-1200039330607-1200039330805-1200039330621-1200039330829-1200039330652-1200043838465-1200039330683-1200039330713-1200040639454-1200040639492-1200048695803_360x480_crop_center.jpg?v=1579679208" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200039330782-1200039330799-1200039330607-1200039330805-1200039330621-1200039330829-1200039330652-1200043838465-1200039330683-1200039330713-1200040639454-1200040639492-1200048695803_360x480_crop_center.jpg?v=1579679208"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -278,7 +318,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200010443548-1200010443555-1200010470124-1200010443562-1200010470148-1200010443586-1200010470179-1200011746327-1200010443616-1200010470223-1200010607988-1200010608053-1200011991994_360x480_crop_center.jpg?v=1579679229" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200010443548-1200010443555-1200010470124-1200010443562-1200010470148-1200010443586-1200010470179-1200011746327-1200010443616-1200010470223-1200010607988-1200010608053-1200011991994_360x480_crop_center.jpg?v=1579679229"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -286,7 +328,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200010254007-1200010254014-1200010254021-1200010254045-1200010254069-1200010254090-1200010254120-1200010173599-1200010254151-1200010254199-1200010173582-1200010173537-1200010173544_360x480_crop_center.jpg?v=1579679188" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200010254007-1200010254014-1200010254021-1200010254045-1200010254069-1200010254090-1200010254120-1200010173599-1200010254151-1200010254199-1200010173582-1200010173537-1200010173544_360x480_crop_center.jpg?v=1579679188"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -294,7 +338,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990591-1200042990607-1200042990614-1200042990638-1200042990652-1200042990676-1200042990690-1200042990720-1200043888774-1200043871301_360x480_crop_center.jpg?v=1564744342" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990591-1200042990607-1200042990614-1200042990638-1200042990652-1200042990676-1200042990690-1200042990720-1200043888774-1200043871301_360x480_crop_center.jpg?v=1564744342"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -302,7 +348,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990935-1200042990942-1200042990959-1200042990973-1200042990997-1200042991017-1200042991031-1200042991062-1200043888781-1200043871325_360x480_crop_center.jpg?v=1564744343" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990935-1200042990942-1200042990959-1200042990973-1200042990997-1200042991017-1200042991031-1200042991062-1200043888781-1200043871325_360x480_crop_center.jpg?v=1564744343"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -310,7 +358,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200043059754-1200043059761-1200043059778-1200043059792-1200043059815-1200043059839-1200043059853-1200043059884-1200043888804-1200043871554_360x480_crop_center.jpg?v=1564744462" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200043059754-1200043059761-1200043059778-1200043059792-1200043059815-1200043059839-1200043059853-1200043059884-1200043888804-1200043871554_360x480_crop_center.jpg?v=1564744462"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -318,7 +368,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042991109-1200042991116-1200042991123-1200042991147-1200042991161-1200042991185-1200042991208-1200042991239-1200043888798-1200043871349_360x480_crop_center.jpg?v=1564744641" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042991109-1200042991116-1200042991123-1200042991147-1200042991161-1200042991185-1200042991208-1200042991239-1200043888798-1200043871349_360x480_crop_center.jpg?v=1564744641"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -326,7 +378,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200041518956-1200041518963-1200041518833-1200041518970-1200041518857-1200041518994-1200041518888-1200044527610-1200041518918-1200041518949-1200044371220_360x480_crop_center.jpg?v=1564744766" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200041518956-1200041518963-1200041518833-1200041518970-1200041518857-1200041518994-1200041518888-1200044527610-1200041518918-1200041518949-1200044371220_360x480_crop_center.jpg?v=1564744766"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -334,7 +388,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990591-1200042990607-1200042990614-1200042990638-1200042990652-1200042990676-1200042990690-1200042990720-1200043888774-1200043871301_360x480_crop_center.jpg?v=1564744342" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990591-1200042990607-1200042990614-1200042990638-1200042990652-1200042990676-1200042990690-1200042990720-1200043888774-1200043871301_360x480_crop_center.jpg?v=1564744342"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -342,7 +398,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990935-1200042990942-1200042990959-1200042990973-1200042990997-1200042991017-1200042991031-1200042991062-1200043888781-1200043871325_360x480_crop_center.jpg?v=1564744343" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042990935-1200042990942-1200042990959-1200042990973-1200042990997-1200042991017-1200042991031-1200042991062-1200043888781-1200043871325_360x480_crop_center.jpg?v=1564744343"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -350,7 +408,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200043059754-1200043059761-1200043059778-1200043059792-1200043059815-1200043059839-1200043059853-1200043059884-1200043888804-1200043871554_360x480_crop_center.jpg?v=1564744462" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200043059754-1200043059761-1200043059778-1200043059792-1200043059815-1200043059839-1200043059853-1200043059884-1200043888804-1200043871554_360x480_crop_center.jpg?v=1564744462"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -358,7 +418,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042991109-1200042991116-1200042991123-1200042991147-1200042991161-1200042991185-1200042991208-1200042991239-1200043888798-1200043871349_360x480_crop_center.jpg?v=1564744641" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200042991109-1200042991116-1200042991123-1200042991147-1200042991161-1200042991185-1200042991208-1200042991239-1200043888798-1200043871349_360x480_crop_center.jpg?v=1564744641"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -366,7 +428,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200030672980-1200030672997-1200029596075-1200029596082-1200030673000-1200030673017-1200029596099-1200029596105-1200030673024-1200030673031-1200029596129-1200029596150-1200029596174-1_360x480_crop_center.jpg?v=1561951764" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200030672980-1200030672997-1200029596075-1200029596082-1200030673000-1200030673017-1200029596099-1200029596105-1200030673024-1200030673031-1200029596129-1200029596150-1200029596174-1_360x480_crop_center.jpg?v=1561951764"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -374,7 +438,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200030672980-1200030672997-1200029596075-1200029596082-1200030673000-1200030673017-1200029596099-1200029596105-1200030673024-1200030673031-1200029596129-1200029596150-1200029596174-1_360x480_crop_center.jpg?v=1561951764" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200030672980-1200030672997-1200029596075-1200029596082-1200030673000-1200030673017-1200029596099-1200029596105-1200030673024-1200030673031-1200029596129-1200029596150-1200029596174-1_360x480_crop_center.jpg?v=1561951764"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -382,7 +448,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424505001_DestroyWash_A_360x480_crop_center.jpg?v=1551062433" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424505001_DestroyWash_A_360x480_crop_center.jpg?v=1551062433"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -390,7 +458,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/789847003030_789847_Dark_Indigo_00_A_360x480_crop_center.jpg?v=1550744190" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/789847003030_789847_Dark_Indigo_00_A_360x480_crop_center.jpg?v=1550744190"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -398,7 +468,9 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200046308989-1200045335047-1200045335054-1200045335078-1200045335092-1200046308996-1200045807674-1200045807698-1200046309009-1200045807711-1200046309016_360x480_crop_center.jpg?v=1574922781" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/1200046308989-1200045335047-1200045335054-1200045335078-1200045335092-1200046308996-1200045807674-1200045807698-1200046309009-1200045807711-1200046309016_360x480_crop_center.jpg?v=1574922781"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
@@ -406,18 +478,21 @@
                             </div>
                             <div class="products-wrapper w-1/2 px-2 mb-35px md:w-1/3 lg:w-1/4">
                                 <div class="item-img-wrapper">
-                                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424507001_BrightBlue_A_360x480_crop_center.jpg?v=1551062457" alt=""></a>
+                                    <a href="#"><img
+                                            src="https://cdn.shopify.com/s/files/1/0063/4932/4335/products/424507001_BrightBlue_A_360x480_crop_center.jpg?v=1551062457"
+                                            alt=""></a>
                                 </div>
                                 <p class="prod-desc">Slim Fit Jeans in Distressed with GapFlex</p>
                                 <span class="prod-price">₱1,950.00</span></br>
                                 <span class="promo-code"><b>Use code 3FOR2</b></span>
                             </div>
                         </div>
+
                     </section>
-                    
-               </div>
+
+                </div>
             </div>
-         
+
 
         </div>
 
@@ -425,7 +500,6 @@
     <script src="https://kit.fontawesome.com/81395aa6da.js" crossorigin="anonymous"></script>
     <script src="dist/app.js"></script>
     <script>
-    
         var inputLeft = document.getElementById("input-left");
         var inputRight = document.getElementById("input-right");
 
@@ -438,27 +512,27 @@
 
         function setLeftValue() {
             var _this = inputLeft,
-            min = parseInt(_this.min),
-            max = parseInt(_this.max);
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
 
-            _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) );
+            _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value));
             console.log(_this.value);
-            var percent = ((_this.value - min)/ (max - min)) * 100;
+            var percent = ((_this.value - min) / (max - min)) * 100;
 
             thumbLeft.style.left = percent + "%";
             range.style.left = percent + "%";
             minPrice.innerHTML = `${_this.value}.00`;
         }
         setLeftValue();
-        
+
 
         function setRightValue() {
             var _this = inputRight,
-            min = parseInt(_this.min),
-            max = parseInt(_this.max);
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
 
-            _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) );
-            var percent = ((_this.value - min)/ (max - min)) * 100;
+            _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value));
+            var percent = ((_this.value - min) / (max - min)) * 100;
 
             thumbRight.style.right = (100 - percent) + "%";
             range.style.right = (100 - percent) + "%";
@@ -467,12 +541,12 @@
 
         setRightValue();
 
-        inputLeft.addEventListener("input",setLeftValue);
-        inputRight.addEventListener("input",setRightValue);
+        inputLeft.addEventListener("input", setLeftValue);
+        inputRight.addEventListener("input", setRightValue);
 
-     
+
         // maxPrice.innerHTML = `${thumbRight.value}.00`;
-
     </script>
 </body>
+
 </html>

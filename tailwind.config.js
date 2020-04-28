@@ -18,8 +18,8 @@ module.exports = {
         '39px': '2.438rem',
         '165px': '10.333rem',
         '112px': '7rem',  
-        '342px': '25vw'
-
+        '342px': '25vw',
+        '65%': '65%'
       },
       colors: {
         'dark-blue': '#122344',
@@ -52,11 +52,18 @@ module.exports = {
         'cat-bot-bef': '97%',
         'size-bot-bef': '98%',
         'col-bot-bef': '99.3%',
-        'ran-bot-bef': '95%'
+        'ran-bot-bef': '95%',
+        '34%': '34%',
+        '11%': '11.5%'
 
       },
       maxWidth: {
-        '342px': '25vw'
+        '342px': '25vw',
+        '65%' : '65%',
+        '497px': '497px'
+      },
+      minWidth : {
+        '65%' : '65%'
       }
     }
   },
