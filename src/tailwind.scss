@@ -118,6 +118,14 @@ li.active  {
     @apply p-10px text-filter-color text-filter-size block;
 }
 
+.filter-wrapper {
+    @apply border border-solid border-gray-300;
+}
+
+.filter-wrapper::before {
+    @apply absolute w-4 h-4 border-b-0 border-r-0 border-l border-t border-gray-300 border-solid bg-white empty-content inset-x-4/6 -ml-4 transform rotate-45; 
+}
+
 .size-headers {
     @apply text-category-header text-dark-blue m-0 mb-2 pt-4 pr-2 pl-2;
 }
@@ -125,3 +133,19 @@ li.active  {
 .color-lists {
     @apply mt-1 pl-6;
 }
+
+#category-wrapper::before {
+     @apply bottom-cat-bot-bef;
+}
+#sizes-wrapper::before {
+    @apply bottom-size-bot-bef;
+}
+#color-wrapper::before {
+    @apply bottom-col-bot-bef;
+}
+#range-wrapper::before {
+    @apply bottom-ran-bot-bef;
+}
+
+
+
