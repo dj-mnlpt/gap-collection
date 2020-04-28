@@ -1,7 +1,11 @@
-.filter-container, .filter-wrapper {
+.filter-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.filter-wrapper {
+  height: 150px;
 }
 
 .middle {
