@@ -37,7 +37,8 @@ module.exports = {
       screens: {
         '7xl': '1280px',
         '208px': '13rem',
-        'x-md': '790px'
+        'x-md': '790px',
+        'xsPhone' :{'max':'425px'}
       },
       inset: {
         '1/6': '-.5%',
