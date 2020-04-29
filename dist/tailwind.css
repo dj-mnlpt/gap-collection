@@ -4,10 +4,6 @@
   height: fit-content;
 }
 
-.filter-wrapper {
-  height: 150px;
-}
-
 .middle {
   position: relative;
   width: 50%;
@@ -17266,9 +17262,28 @@ li.filter-selector {
   color: #4a5568;
 }
 
+.filter-wrapper {
+  height: 10.333rem;
+}
+
 @media (min-width: 768px) {
   li.filter-selector {
     border-width: 0;
+  }
+
+  .filter-span {
+    margin-left: 0;
+    text-transform: lowercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4a5568;
+  }
+
+  .filter-wrapper {
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a0aec0;
   }
 
   .filter-wrapper::before {
@@ -17311,14 +17326,6 @@ li.filter-selector {
 
   #range-wrapper::before {
     bottom: 95%;
-  }
-
-  .filter-span {
-    margin-left: 0;
-    text-transform: lowercase;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #4a5568;
   }
 }
 

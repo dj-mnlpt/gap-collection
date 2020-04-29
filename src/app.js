@@ -67,6 +67,11 @@ $(function() {
             $(".filter-container").addClass("hidden");
             $("#overlay").addClass("hidden")
         }
+        if ($(e.target).closest('.filter-selector').length == 0) {
+            $(".filter-wrapper").addClass("hidden");
+            $(".filter-selector").children(".filter-title").find("i").removeClass("transform rotate-180 transition duration-100 ease-in-out");
+        }
+
     })
 
 });
